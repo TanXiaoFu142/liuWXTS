@@ -13,6 +13,7 @@ public class TestController {
 
     @RequestMapping("test")
     public String test() {
-        return PushUtil.push();
+        return new PushUtil().push();
+//        return PushUtil.push();
     }
 }

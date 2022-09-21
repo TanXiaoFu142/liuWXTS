@@ -17,6 +17,7 @@ public class Task {
     // 定时 早8点推送  0秒 0分 8时
     @Scheduled(cron = "0 0 8 * * ?")
     public void goodMorning() {
-        PushUtil.push();
+        new PushUtil().push();
+//         PushUtil.push();
     }
 }

@@ -19,10 +19,10 @@ import java.util.Map;
  */
 @Component
 public class WeatherUtil {
-    public static Result getWeather() {
+    public static Result getWeather(String districtId) {
         RestTemplate restTemplate = new RestTemplate();
         Map<String, String> map = new HashMap<>();
-        map.put("district_id", PushConfigure.getDistrict_id());
+        map.put("district_id", districtId);
         map.put("ak", PushConfigure.getAk());
         String res = restTemplate.getForObject("https://api.map.baidu.com/weather/v1/?district_id={district_id}&data_type=all&ak={ak}", String.class, map);
         JSONObject json = JSONObject.parseObject(res);

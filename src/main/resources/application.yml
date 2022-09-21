@@ -2,24 +2,36 @@ server:
   port: 80
 wechat:
   #  微信公众平台的appID
-  appId: ''
+  appId: 'wx52ead87ab79958e0'
   #  微信公众平台的appSecret
-  secret: ''
-  #  百度地图开放平台的城市ID
-  district_id: '340100'
+  secret: '84bd5d3eaf3552afc3a3558f5a8facdb'
+  #  百度地图开放平台的城市ID 长沙：430100 娄底：431300
+  district_id:
+    - '430100'
+    - '431300'
   #  百度地图开放平台的应用AK
-  ak: ''
+  ak: 'rY9kKg8VOo1qPf7HclEpbLGrY1gVw4Oc'
   #  纪念日：注意格式yyyy-MM-dd
-  loveDate: '2021-08-23'
-  #  生日：注意格式yyyy-MM-dd （无论是计算阳历生日还是农历生日,一律填阳历出生年月日）
-  birthday: '1998-01-06'
+  loveDate: '2016-09-09'
   #  模板ID
-  templateId: ''
+  templateId: 'bMeft1H8PPEnuZt8CTCzJuMnCiNhC1qjyL7aesSkf-U'
   #  天行数据apiKey
-  rainbowKey: ''
+  rainbowKey: 'fa1098eed577be5ceff3b841f3941822'
   #  关注公众号的用户ID（要推送的人的用户ID,在微信公众平台里可以查看到,现在支持推送多个人）
   userId:
-    - ''
-    - ''
+    - 'o8JFv6SzCRka0-FLuJlRUsiygMYQ'
+    - 'o8JFv6SX5xdUGdKeW5sGnY7Byh9I'
   #    是否按农历计算生日 true:是 false:否
-  useLunar: true
+  useLunar: false
+
+  #  生日：注意格式yyyy-MM-dd （无论是计算阳历生日还是农历生日,一律填阳历出生年月日）
+user-info:
+  users:
+    - name: '刘子'
+      birthday: '2003-02-17'
+    - name: '骚'
+      birthday: '2003-08-27'
+    - name: '咩'
+      birthday: '2003-06-14'
+    - name: '狗'
+      birthday: '2003-08-06'

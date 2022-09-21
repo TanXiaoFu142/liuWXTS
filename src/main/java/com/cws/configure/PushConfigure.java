@@ -25,7 +25,7 @@ public class PushConfigure {
     /**
      * 天气查询的城市ID
      */
-    private static String district_id;
+    private static List<String> district_id;
     /**
      * 应用AK
      */
@@ -34,10 +34,6 @@ public class PushConfigure {
      * 纪念日
      */
     private static String loveDate;
-    /**
-     * 生日
-     */
-    private static String birthday;
     /**
      * 关注公众号的用户ID
      */
@@ -73,11 +69,11 @@ public class PushConfigure {
         PushConfigure.secret = secret;
     }
 
-    public static String getDistrict_id() {
+    public static List<String> getDistrict_id() {
         return district_id;
     }
 
-    public void setDistrict_id(String district_id) {
+    public void setDistrict_id(List<String> district_id) {
         PushConfigure.district_id = district_id;
     }
 
@@ -95,14 +91,6 @@ public class PushConfigure {
 
     public void setLoveDate(String loveDate) {
         PushConfigure.loveDate = loveDate;
-    }
-
-    public static String getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(String birthday) {
-        PushConfigure.birthday = birthday;
     }
 
     public static List<String> getUserId() {
@@ -124,6 +112,7 @@ public class PushConfigure {
     public static String getRainbowKey() {
         return rainbowKey;
     }
+
 
     public void setRainbowKey(String rainbowKey) {
         PushConfigure.rainbowKey = rainbowKey;
